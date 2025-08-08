@@ -1,0 +1,85 @@
+# AI Automation System - Git Ignore File
+
+# Node.js and npm
+.npm/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# NVM (Node Version Manager)
+.nvm/
+
+# n8n specific
+.n8n/database.sqlite*
+.n8n/*.log*
+.n8n/binaryData/
+.n8n/crash.journal
+
+# Qdrant data (too large for git)
+qdrant_storage/
+
+# Backups (too large for git)
+backups/
+
+# Logs
+*.log
+logs/
+health.log
+backup.log
+cleanup.log
+maintenance.log
+errors.log
+
+# Cache directories
+.cache/
+.npm/_cacache/
+.npm/_logs/
+
+# Claude AI specific
+.claude/
+.claude.json
+.claude.json.backup
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+temp/
+
+# SSH keys (security)
+.ssh/id_*
+.ssh/known_hosts
+
+# Git configuration (personal)
+.gitconfig
+
+# OS generated files
+.directory
+*.swp
+*.swo
+*~
+
+# Environment variables (may contain secrets)
+.env
+.env.local
+.env.production
+
+# Backup and recovery files
+*.backup
+*.old
+*.bak
+
+# Data directories (preserve structure, not content)
+.n8n/binaryData/*
+!.n8n/binaryData/.gitkeep
+qdrant_storage/*
+!qdrant_storage/.gitkeep
+backups/*
+!backups/.gitkeep
