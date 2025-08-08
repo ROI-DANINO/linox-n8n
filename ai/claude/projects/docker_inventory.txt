@@ -1,0 +1,22 @@
+Docker Container Inventory
+==========================
+Generated on: 2025-08-08
+
+Container Name: n8n
+Status: Up About a minute (healthy)
+Networks: ai-stack
+Mounted Volumes:
+  - /home/roi12/.n8n -> /home/node/.n8n (bind)
+
+
+Container Name: qdrant
+Status: Up About a minute (healthy)
+Networks: ai-stack
+Mounted Volumes:
+  - /home/roi12/qdrant_storage -> /qdrant/storage (bind)
+
+
+Summary:
+- Total containers: 2
+- Running: 2
+- Stopped: 0
