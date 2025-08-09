@@ -1,117 +1,97 @@
+
+!.n8n/binaryData/.gitkeep
+!backups/.gitkeep
+!qdrant_storage/.gitkeep
 # AI Automation System - Git Ignore File
-
-# Node.js and npm
-.npm/
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# NVM (Node Version Manager)
-.nvm/
-
-# n8n specific
-.n8n/database.sqlite*
-.n8n/*.log*
-.n8n/binaryData/
-.n8n/crash.journal
-
-# Qdrant data (too large for git)
-qdrant_storage/
-
+# Additional Node.js patterns
+# Backup and recovery files
 # Backups (too large for git)
-backups/
-
-# Logs
-*.log
-logs/
-health.log
-backup.log
-cleanup.log
-maintenance.log
-errors.log
-
+# Build outputs
 # Cache directories
-.cache/
-.npm/_cacache/
-.npm/_logs/
-
 # Claude AI specific
-.claude/
-.claude.json
-.claude.json.backup
-
-# System files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Temporary files
-*.tmp
-*.temp
-.tmp/
-temp/
-
-# SSH keys (security)
-.ssh/id_*
-.ssh/known_hosts
-
-# Git configuration (personal)
-.gitconfig
-
-# OS generated files
-.directory
-*.swp
-*.swo
-*~
-
+# Data directories (preserve structure, not content)
+# Diagnostic reports (https://nodejs.org/api/report.html)
 # Environment variables (may contain secrets)
+# Git configuration (personal)
+# Logs
+# NVM (Node Version Manager)
+# Node.js and npm
+# OS generated files
+# Optional eslint cache
+# Optional stylelint cache
+# Qdrant data (too large for git)
+# Runtime data
+# SSH keys (security)
+# System files
+# Temporary files
+# TypeScript cache
+# Yarn Integrity file
+# n8n specific
+*.backup
+*.bak
+*.log
+*.old
+*.pid
+*.pid.lock
+*.seed
+*.swo
+*.swp
+*.temp
+*.tmp
+*.tsbuildinfo
+*~
+.DS_Store
+.bash_history
+.cache/
+.claude.json
+.claude.json*
+.claude.json.backup
+.claude/
+.directory
 .env
 .env.local
 .env.production
-
-# Backup and recovery files
-*.backup
-*.old
-*.bak
-
-# Data directories (preserve structure, not content)
-.n8n/binaryData/*
-!.n8n/binaryData/.gitkeep
-qdrant_storage/*
-!qdrant_storage/.gitkeep
-backups/*
-!backups/.gitkeep
-
-# Additional Node.js patterns
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Optional eslint cache
 .eslintcache
-
-# Optional stylelint cache
-.stylelintcache
-
-# Yarn Integrity file
-.yarn-integrity
-
-# Build outputs
-dist/
-build/
-.claude.json*
-.bash_history
-.motd_shown
-.sudo_as_admin_successful
+.gitconfig
+.idea/
 .landscape/
+.motd_shown
+.n8n/
+.n8n/*.log*
+.n8n/binaryData/
+.n8n/binaryData/*
+.n8n/crash.journal
+.n8n/database.sqlite*
+.npm/
+.npm/_cacache/
+.npm/_logs/
+.nvm/
+.ssh/id_*
+.ssh/known_hosts
+.stylelintcache
+.sudo_as_admin_successful
+.tmp/
+.vscode/
+.yarn-integrity
+Thumbs.db
+ai/
+backup.log
+backups/
+backups/*
+build/
+cleanup.log
+dist/
+errors.log
+health.log
+lerna-debug.log*
+logs/
+maintenance.log
+node_modules/
+npm-debug.log*
+pids
+qdrant_storage/
+qdrant_storage/*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+temp/
+yarn-debug.log*
+yarn-error.log*
