@@ -110,3 +110,8 @@ pids
 # Build outputs
 dist/
 build/
+.claude.json*
+.bash_history
+.motd_shown
+.sudo_as_admin_successful
+.landscape/
